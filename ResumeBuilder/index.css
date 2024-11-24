@@ -1,0 +1,273 @@
+body{
+    background-color: antiquewhite;
+}
+#displayImage{
+    width: 260px;
+    height: 260px;
+    align-items: center;
+    border-radius: 50%;
+    image-rendering: auto;
+    padding: 10px;
+    margin: auto;
+}
+.aside{
+    float: left;
+    background-color: rgba(0, 18, 32, 0.797);
+    width: 270px;
+    padding: 20px ;
+    margin: auto;
+    color: white;
+}
+#aboutme{
+width: 250px;
+}
+.container{
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(248, 219, 175);
+    }
+#input{
+    background-color: aquamarine;
+    border-style: hidden;
+    width: auto;
+    }
+#h12{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande','Lucida Sans Unicode',Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: 0;
+    font-weight: bold;
+    
+    }
+.h11{
+   text-align: center;
+   margin: 50px;
+   padding: 0;
+
+}    
+p{
+    padding: auto;
+    margin: auto ;
+    position: relative;
+}    
+hr{
+   height: 2px;
+   background-color: black;  
+   border-style: hidden;  
+}
+.container2{
+
+    width: 390px;
+    float: left;
+    padding: 30px;
+    height: auto;
+    margin: auto;
+  }
+.button{
+    width: 300px;
+    height: 60px ;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    margin: 50px;
+    padding: 0%;
+    position: -webkit-sticky; 
+    align-items: center;
+    color: black;
+
+}    
+.button:hover{
+    background-color: black;
+    border-color: aqua;
+    color: white;
+    font-size: 20px;
+}
+#frm{
+    margin: 5rem;
+    padding: 2rem;
+    width: 25.4rem;
+    height: 30rem;
+    float: right;
+    color: white;
+    border-radius: 2pc;
+    border-style: hidden;
+    box-shadow: 5px 5px 25px 5px black;
+    background: transparent;
+
+}
+label{
+    font-size: large;
+}
+#image1{
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+    z-index: -1;
+}
+img{
+    width: 70%;
+    height:700px;
+    float: left;
+}
+input{
+    border: none;
+    border-style: hidden;
+    color:white;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+    background: none;
+    
+}
+hr{
+    color: white;
+}
+#btn{
+    border-style: hidden;
+    border-radius: 2pc;
+    width: 80%;
+    height: 35px;
+    background-color: black;
+    color: white;
+    margin: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#btn2{
+    background-color: rgba(19, 19, 19, 0.597);
+    border-style: hidden;
+    border-radius: 2pc;
+    width: 25%;
+    height: 30px;
+    color: white;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+#btns{
+    text-align: center;
+}
+#signb{
+    border-style: hidden;
+    border-radius: 2pc;
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+#btn:hover,#btn2:hover,#signb:hover{
+    font-size: large;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.722);
+    font-weight: 700;
+}
+#imG{
+    width: 40rem;
+    height: 30rem;
+    margin: 3rem;
+    opacity: 0.5;
+    border-top-left-radius: 10pc;
+    border-bottom-right-radius: 10pc;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 55vw;
+    height: 10px; 
+    animation: wave-motion 4s linear infinite;
+}
+
+#imG{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: image-motion 4s linear infinite;
+}
+
+@keyframes wave-motion {
+    0% {
+        transform: skewX(0deg) scaleY(1);
+    }
+    50% {
+        transform: skewX(20deg) scaleY(0.9);
+    }
+    100% {
+        transform: skewX(0deg) scaleY(1);
+    }
+}
+
+@keyframes image-motion {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+#signfrm{
+    margin: 10rem;
+    padding: 2rem;
+    width: 22rem;
+    height: 25rem;
+    color: white;
+    float: right;
+    border-radius: 2pc;
+    border-style: hidden;
+    background: transparent;
+    box-shadow: 5px 5px 25px 5px black;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+#imgsignin{
+    width: 40rem;
+    height: 30rem;
+    float: left;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 3pc;
+    
+}
+.image-container {
+    animation: moveUpDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+    transform: translateY(0);
+    }
+    100% {
+    transform: translateY(2rem);
+    }
+}
+#passwordMatchMessage{
+    color: green;
+    float: right;
+}
+#passnotmatch{
+    color: red;
+    float: right;
+}
+#whenpassempty,#namemsg,#emailmsg,#passlength{
+    color: red;
+    float: right;
+}
+#Download{
+    border: hidden;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: #fff;
+    border-radius: 1pc;
+    margin-top: 500px;
+}

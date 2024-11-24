@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh"  url="SignIn.html">
+    <link rel="icon"type="image/jpg" href="Logo.png">
+    <title>ResumePro</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+<link rel="stylesheet" href="index.css">
+
+
+
+
+
+</head>
+<body style="background-color: rgb(0, 0, 33);">
+    <img src="Logo.png" alt="logo" id="image1" onclick="backReload()" style=" width: 150px;
+    height: 150px;">
+    <br><br>
+
+    <div id="frm">
+        <h1>Sign Up</h1>
+        <form onsubmit="redirectTo('signUP.html'); return false;">
+            
+            <labelfor="name" id="supname">Name :</label><br>
+            <div id="namemsg"></div>
+            <input type="text" id="mname"><br><hr>
+            
+            <label for="gmail">Gmail :</label><br>
+            <div id="emailmsg"></div>
+            <input type="gmail" id="gmail"><br><hr>
+
+            
+            <label id="passid">Password</label><br>
+            <div id="passlength"></div>
+            <input type="password" id="signup_password">
+            <input type="checkbox"  id="showPassword">
+            <label  for="showPassword">Show Password</label><br><hr>
+
+            <div id="passwordMatchMessage"></div>
+            <div id="passnotmatch"></div>
+            <div id="whenpassempty"></div>
+            <label>Repeat Password</label><br>
+            <input type="password" id="repass"><br><hr>
+        
+<div id="btns">
+        <button type="submit" id="btn" onclick="signUP()">SignUp</button>
+        <button type="submit" id="btn2" > <a href="SignIn.html">SignIn</button></a>
+    </div>
+        </form>
+
+</body>
+</html>
+<script src="pdf.js" ></script>
+<script src="Index.js"></script>
